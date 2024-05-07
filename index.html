@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <title>SoClean</title>
 </head>
+
 <body>
-    
+    <section class="contacto">
+        <div class="div-form">
+            <form classe="form-contact" action="/process-form" method="post" enctype="multipart/form-data">
+                <h1 id="contact" class="title-form">Contacto</h1>
+                <div class="div-datos">
+                    <div class="div-name">
+                        <label class="name" for="name">Nombre y Apellido</label>
+                        <div>
+                            <input class="input-name" type="text" />
+                        </div>
+                    </div>
+                    <div class="div-email">
+                        <label class="email" for="email">Correo electrónico</label>
+                        <div>
+                            <input class="input-email" name="email" id="email" type="email" />
+                        </div>
+                    </div>
+                    <div class="div-check">
+                        <label class="label-check">En que servicio de limpieza estaría interesado?</label>
+                        <div class="input-check">
+                            <input type="checkbox" name="jardin" id="jardin" />
+                            Jardín
+                        </div>
+                        <div class="input-check">
+                            <input type="checkbox" name="oficina" id="oficina" />
+                            Oficina
+                        </div>
+                        <div class="input-check">
+                            <input type="checkbox" name="casa" id="casa" />
+                            Casa
+                        </div>
+                    </div>
+                    <div class="cita">
+                        <label class="label-cita"> Esta interesado en concordar una cita personal?
+                            <div class="div-cita">
+                                <label class="label-cita">
+                                    <span>SI</span>
+                                    <input id="si" class="input" name="dato" type="radio" />
+                                </label>
+                                <label class="label">
+                                    <span>NO</span>
+                                    <input id="no" class="input" checked="checked" name="dato" type="radio" />
+                                </label>
+                            </div>
+                            <div>
+                                <input id="telefono" class="input" name="input" type="text" />
+                            </div>
+
+                        </label>
+                        <div>
+                            <div class="container">
+                                <label class="label-container"> Desea recibir últimas noticias de nuestros servicios por
+                                    correo electrónico?
+                                    <div class="div-container">
+                                        <label class="label-container">
+                                            <span>SI</span>
+                                            <input id="yes" class="input" name="radio" type="radio" />
+                                        </label>
+                                        <label class="label">
+                                            <span>NO</span>
+                                            <input id="not" class="input" checked="checked" name="radio" type="radio" />
+                                        </label>
+                                    </div>
+
+                                </label>
+                                <div>
+                                </div>
+                            </div>
+                            <div className="">
+                                <button className="" type="submit">
+                                    Enviar
+                                </button>
+                            </div>
+                        </div>
+            </form>
+        </div>
+    </section>
 </body>
+
 </html>
