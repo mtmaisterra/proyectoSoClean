@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <title>SoClean</title>
+</head>
+
+<body>
+    <form class="form-contact" action="/process-form" method="post" enctype="multipart/form-data">
+        <h1 id="contact" class="title-contact">Contacto</h1>
+        <div class="div-input-contact">
+            <input class="text-input-contact" type="text" placeholder="Nombre y Apellido" />
+        </div>
+        <div>
+            <input class="text-input-contact" name="email" id="email" type="email" placeholder="Email" />
+        </div>
+        <div class="check-contact">
+            <label class="label-check">En que servicio de limpieza estaría interesado?</label>
+            <div class="input-check">
+                <div class="option-check">
+                    <input type="checkbox" name="jardin" id="jardin"  />
+                    Jardín
+                </div>
+                <div class="option-check">
+                    <input type="checkbox" name="oficina" id="oficina" />
+                    Oficina
+                </div>
+                <div class="option-check">
+                    <input type="checkbox" name="casa" id="casa" />
+                    Casa
+                </div>
+            </div>
+        </div>
+        <div class="cita-contact">
+            <label class="label-contact"> Esta interesado en concordar una cita personal?
+                <div class="encuentro-contact">
+                    <label class="label-encuentro">
+                        SI
+                        <input id="si" class="input-encuentro" name="dato" type="radio" />
+                    </label>
+                    <label class="label-encuentro">
+                        NO
+                        <input id="no" class="input-encuentro" checked="checked" name="dato" type="radio" />
+                    </label>
+                </div>
+                <div>
+                    <input id="telefono" class="text-input-encuentro" name="input" type="text" placeholder="Número de teléfono" />
+                </div>
+            </label>
+        </div>
+        <div class="info-contact">
+            <label class="label-info"> Desea recibir últimas noticias de nuestros servicios por
+                correo electrónico?
+                <div class="div-info-contact">
+                    <label class="label-encuentro">
+                        SI
+                        <input id="yes" class="input-info-contact" name="radio" type="radio" />
+                    </label>
+                    <label class="label-encuentro">
+                       NO
+                        <input id="not" class="input-info-contact" checked="checked" name="radio" type="radio" />
+                    </label>
+                </div>
+            </label>
+        </div>
+        <div class="div-submit">
+            <button class="button-submit" type="submit">
+                Enviar
+            </button>
+        </div>
+    </form>
+</body>
+
+</html>
