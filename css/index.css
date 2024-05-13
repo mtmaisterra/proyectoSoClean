@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    background-color: #FFC0CB;
+}
+header .logo-header{
+    width: 100px;
+    margin-left: 20px;
+    padding: 16px 0;
+}
+
+header .solapas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .solapas a{
+    text-decoration: none;
+    padding: 0 20px;
+    color: black;
+    /* color: #ff69b4; */
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #FFC0CB;
+}
+
+main .carrousel{
+    position: relative;
+    border-radius: 30px;
+    width: 70%;
+    height: 500px;
+    margin: 30px 0;
+    overflow: hidden;
+    display: flex;
+}
+
+main .carrousel img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.prev{
+    right: 100%;
+    z-index: 5;
+    /* transition: all 1s; */
+}
+
+.center{
+    /* left: 0%; */
+    right: 0%;
+    z-index: 8;
+    /* transition: all 1s; */
+}
+
+.back{
+    /* left: 0%; */
+    right: 0%;
+    z-index: 3;
+    /* transition: all 1s; */
+}
+
+
+.next{
+    right: -100%;
+    z-index: 5;
+    transition: all 0.2s;
+}
+
+main .carrousel .flecha-derecha{
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    /* background-color: rgba(0, 255, 255, 0.103); */
+    right: 0;
+    z-index: 10;
+}
+main .carrousel .flecha-izquierda{
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    /* background-color: rgba(0, 255, 255, 0.103); */
+    left: 0;
+    z-index: 10;
+}
+
+main .carrousel .flecha-derecha .fa-chevron-right{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+}
+
+main .carrousel .flecha-izquierda .fa-chevron-left{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+}
+
+main .sobre-nosotros-descripcion{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+main .sobre-nosotros-descripcion span{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+main .sobre-nosotros-descripcion p{
+    text-align: center;
+}
+
+
+main .tarjetas-de-servicios{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: center; */
+    background-color: white;
+    width: 100%;
+}
+
+main .tarjetas-de-servicios span{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+main .tarjetas-de-servicios .las-tarjetas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* width: 90%; */
+    margin: 30px 0;
+}
+
+main .tarjetas-de-servicios .las-tarjetas .tarjetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: white;
+    padding-bottom: 20px;
+    border-radius: 60px 60px 30px 30px;
+    height: 400px;
+}
+
+main .tarjetas-de-servicios .las-tarjetas .tarjetas img{
+    width: 100%;
+    height: 70%;
+    border-radius: 30px 30px 0 0;
+    /* background-color: blue; */
+}
+
+main .tarjetas-de-servicios .las-tarjetas .tarjetas span{
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    /* background-color: aquamarine; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+main .tarjetas-de-servicios .las-tarjetas .tarjetas p{
+    margin: 0;
+    text-align: center;
+    /* background-color: red; */
+}
+
+main .sobre-nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px;
+}
+
+main .sobre-nosotros .sobre-nosotros-textos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFC0CB;
+    width: 50%;
+}
+
+main .sobre-nosotros .sobre-nosotros-textos span{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    /* background-color: bisque; */
+}
+
+main .sobre-nosotros .sobre-nosotros-textos p{
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+}
+
+main .sobre-nosotros .sobre-nosotros-textos ol{
+    list-style: none;
+    padding: 0;
+}
+
+main .sobre-nosotros .sobre-nosotros-textos ol li{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+main .sobre-nosotros .sobre-nosotros-textos button{
+    background-color: #ff69b4;
+    color: #FFC0CB;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+main .sobre-nosotros img{
+    width: 50%;
+    height: 100%;
+}
+
+footer{
+    background-color: #292D27;
+    padding: 50px 0;
+}
+
+footer .sub-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer .sub-footer .logo-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .sub-footer .logo-footer img{
+    width: 25%;
+}
+
+footer .sub-footer .footer-1, footer .sub-footer .footer-2, footer .sub-footer .footer-3{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    border-left: 1px solid white;
+}
+
+
+
+footer .sub-footer .footer-1 ul, footer .sub-footer .footer-2 ul, footer .sub-footer .footer-3 ul{
+    width: 100%;
+    padding: 0;
+}
+
+
+.titulo-lista{
+    font-size: 20px;
+color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.item-lista{
+    color: white;
+    font-size: 16px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
