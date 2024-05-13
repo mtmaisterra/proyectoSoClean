@@ -118,6 +118,7 @@ body {
 }
 
 .button-submit:hover {
+    width: 15%;
     background-color: rgba(251, 249, 252);
     color: rgba(73, 7, 170, 0.731);
     border: 8px solid rgb(12, 12, 12);
