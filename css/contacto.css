@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color:  #FFC0CB;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -15,8 +15,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: 10%;
-    border: 6px solid rgb(67, 5, 108);
-    background-color: rgb(222, 181, 237);
+    border: 6px solid #ff69b4;
+    background-color:  #FFC0CB;
     color: black;
 }
 
@@ -112,15 +112,16 @@ body {
     text-align: center;
     font-size: 20px;
     padding: 1%;
-    background-color: rgba(73, 7, 170);
+    background-color: #ff69b4;
     color: white;
-    border: 8px solid rgb(141, 140, 140);
+    border: 0;
+    border-radius: 20px;
 }
 
 .button-submit:hover {
     width: 15%;
-    background-color: rgba(251, 249, 252);
-    color: rgba(73, 7, 170, 0.731);
-    border: 8px solid rgb(12, 12, 12);
+    background-color: white;
+    color: #ff69b4;
+    border: 8px solid #ff69b4;
     text-transform: uppercase;
 }
