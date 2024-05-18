@@ -44,6 +44,11 @@ header .solapas a{
 
 }
 
+header .solapas a:hover{
+    text-decoration: underline;
+}
+
+
 main{
     display: flex;
     flex-direction: column;
@@ -101,7 +106,7 @@ main .carrousel .flecha-derecha{
     position: absolute;
     height: 100%;
     width: 10%;
-    /* background-color: rgba(0, 255, 255, 0.103); */
+    background-color: rgba(0, 255, 255, 0.103);
     right: 0;
     z-index: 10;
 }
@@ -109,7 +114,7 @@ main .carrousel .flecha-izquierda{
     position: absolute;
     height: 100%;
     width: 10%;
-    /* background-color: rgba(0, 255, 255, 0.103); */
+    background-color: rgba(0, 255, 255, 0.103);
     left: 0;
     z-index: 10;
 }
@@ -118,20 +123,27 @@ main .carrousel .flecha-derecha .fa-chevron-right{
     position: absolute;
     top: 50%;
     left: 50%;
+    color: #FFC0CB;
+    font-size: 30px;
     z-index: 4;
+    transform: translate(-50%,-50%);
 }
 
 main .carrousel .flecha-izquierda .fa-chevron-left{
     position: absolute;
     top: 50%;
     left: 50%;
+    color: #FFC0CB;
+    font-size: 30px;
     z-index: 4;
+    transform: translate(-50%,-50%);
 }
 
 main .sobre-nosotros-descripcion{
     display: flex;
     flex-direction: column;
     width: 80%;
+
 }
 
 main .sobre-nosotros-descripcion span{
@@ -140,9 +152,47 @@ main .sobre-nosotros-descripcion span{
     font-weight: 500;
 }
 
-main .sobre-nosotros-descripcion p{
-    text-align: center;
+main .sobre-nosotros-descripcion .sobre-nosotros-elementos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+main .sobre-nosotros-descripcion .sobre-nosotros-elementos img{
+    width: 50%;
+}
+
+main .sobre-nosotros-descripcion .sobre-nosotros-elementos .sobre-nosotros-elementos2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+main .sobre-nosotros-descripcion .sobre-nosotros-elementos .sobre-nosotros-elementos2 p{
+    text-align: center;
+    font-weight: 500;
+    line-height: 175%;
+}
+
+main .sobre-nosotros-descripcion .sobre-nosotros-elementos .sobre-nosotros-elementos2 button{
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    transition: all 1s;
+    box-sizing: border-box;
+}
+
+main .sobre-nosotros-descripcion .sobre-nosotros-elementos .sobre-nosotros-elementos2 button:hover{
+    background-color: white;
+    color: #ff69b4;
+    border: 1px solid #ff69b4;
+
+}
+
 
 
 main .tarjetas-de-servicios{
@@ -164,7 +214,7 @@ main .tarjetas-de-servicios span{
 main .tarjetas-de-servicios .las-tarjetas{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: space-evenly;
     /* width: 90%; */
     margin: 30px 0;
@@ -174,16 +224,16 @@ main .tarjetas-de-servicios .las-tarjetas .tarjetas{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 30%;
     background-color: white;
     padding-bottom: 20px;
     border-radius: 60px 60px 30px 30px;
-    height: 400px;
+    /* height: 400px; */
 }
 
 main .tarjetas-de-servicios .las-tarjetas .tarjetas img{
     width: 100%;
-    height: 70%;
+    height: 300px;
     border-radius: 30px 30px 0 0;
     /* background-color: blue; */
 }
@@ -201,6 +251,7 @@ main .tarjetas-de-servicios .las-tarjetas .tarjetas span{
 main .tarjetas-de-servicios .las-tarjetas .tarjetas p{
     margin: 0;
     text-align: center;
+    font-weight: 500;
     /* background-color: red; */
 }
 
@@ -247,14 +298,23 @@ main .sobre-nosotros .sobre-nosotros-textos ol li{
 
 main .sobre-nosotros .sobre-nosotros-textos button{
     background-color: #ff69b4;
-    color: #FFC0CB;
+    color: white;
     padding: 10px;
     border: none;
     border-radius: 20px;
+    transition: all 1s;
+    box-sizing: border-box;
 }
 
+main .sobre-nosotros .sobre-nosotros-textos button:hover{
+    background-color: white;
+    color: #ff69b4;
+    border: 1px solid #ff69b4;
+}
+
+
 main .sobre-nosotros img{
-    width: 50%;
+    min-width: 50%;
     height: 100%;
 }
 
@@ -296,7 +356,7 @@ footer .sub-footer .footer-1 ul, footer .sub-footer .footer-2 ul, footer .sub-fo
 
 .titulo-lista{
     font-size: 20px;
-color: white;
+    color: white;
     text-align: center;
     margin-bottom: 30px;
 }
