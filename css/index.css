@@ -184,6 +184,7 @@ main .sobre-nosotros-descripcion .sobre-nosotros-elementos .sobre-nosotros-eleme
     border-radius: 20px;
     transition: all 1s;
     box-sizing: border-box;
+    margin-bottom: 25px;
 }
 
 main .sobre-nosotros-descripcion .sobre-nosotros-elementos .sobre-nosotros-elementos2 button:hover{
@@ -228,8 +229,14 @@ main .tarjetas-de-servicios .las-tarjetas .tarjetas{
     background-color: white;
     padding-bottom: 20px;
     border-radius: 60px 60px 30px 30px;
+    transition: all 1s;
     /* height: 400px; */
 }
+main .tarjetas-de-servicios .las-tarjetas .tarjetas:hover{
+    box-shadow: 10px 10px 30px;
+}
+
+
 
 main .tarjetas-de-servicios .las-tarjetas .tarjetas img{
     width: 100%;
@@ -250,7 +257,10 @@ main .tarjetas-de-servicios .las-tarjetas .tarjetas span{
 
 main .tarjetas-de-servicios .las-tarjetas .tarjetas p{
     margin: 0;
-    text-align: center;
+    text-align: start;
+    line-height: 130%;
+    /* text-align: center; */
+    width: 80%;
     font-weight: 500;
     /* background-color: red; */
 }
@@ -269,6 +279,7 @@ main .sobre-nosotros .sobre-nosotros-textos{
     align-items: center;
     background-color: #FFC0CB;
     width: 50%;
+    /* min-height: 500px; */
 }
 
 main .sobre-nosotros .sobre-nosotros-textos span{
@@ -300,6 +311,7 @@ main .sobre-nosotros .sobre-nosotros-textos button{
     background-color: #ff69b4;
     color: white;
     padding: 10px;
+    margin-bottom: 30px;
     border: none;
     border-radius: 20px;
     transition: all 1s;
@@ -366,4 +378,77 @@ footer .sub-footer .footer-1 ul, footer .sub-footer .footer-2 ul, footer .sub-fo
     font-size: 16px;
     padding-left: 30px;
     margin-bottom: 10px;
+}
+
+
+@media(max-width: 640px){
+
+    main .carrousel{
+        width: 100%;
+        height: 300px;
+        border-radius: 0;
+    }
+
+    main .sobre-nosotros-descripcion .sobre-nosotros-elementos{
+        width: 100%;
+    }
+
+    main .sobre-nosotros-descripcion .sobre-nosotros-elementos img{
+        display: none;
+    }
+
+    main .sobre-nosotros-descripcion .sobre-nosotros-elementos .sobre-nosotros-elementos2{
+        width: 100%;
+    }
+
+    main .sobre-nosotros-descripcion .sobre-nosotros-elementos .sobre-nosotros-elementos2 p{
+        width: 100%;
+        text-align: start;
+    }
+
+    main .tarjetas-de-servicios .las-tarjetas{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    main .tarjetas-de-servicios .las-tarjetas .tarjetas{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    main .sobre-nosotros{
+        height: auto;
+    }
+
+    main .sobre-nosotros img{
+        display: none;
+    }
+
+    main .sobre-nosotros .sobre-nosotros-textos{
+        width: 100%;
+    }
+
+
+
+
+}
+
+@media(max-width: 1024px){
+    main .sobre-nosotros{
+        height: auto;
+    }
+
+    main .sobre-nosotros img{
+        display: none;
+    }
+
+    main .sobre-nosotros .sobre-nosotros-textos{
+        width: 100%;
+    }
+
+
+
+
+
 }
