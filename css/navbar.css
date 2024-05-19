@@ -4,7 +4,6 @@ body {
 }
 
 .navbar {
-    position: -webkit-sticky; /* Para compatibilidad con Safari */
     position: sticky;
     top: 0;
     width: 100%;
