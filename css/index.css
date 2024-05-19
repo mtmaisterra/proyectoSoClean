@@ -191,7 +191,7 @@ main .sobre-nosotros-descripcion .sobre-nosotros-elementos .sobre-nosotros-eleme
     background-color: white;
     color: #ff69b4;
     border: 1px solid #ff69b4;
-
+    cursor: pointer;
 }
 
 
@@ -322,6 +322,7 @@ main .sobre-nosotros .sobre-nosotros-textos button:hover{
     background-color: white;
     color: #ff69b4;
     border: 1px solid #ff69b4;
+    cursor: pointer;
 }
 
 
@@ -379,6 +380,17 @@ footer .sub-footer .footer-1 ul, footer .sub-footer .footer-2 ul, footer .sub-fo
     padding-left: 30px;
     margin-bottom: 10px;
 }
+
+.item-lista a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.item-lista a:hover{
+    text-decoration: underline;
+}
+
 
 
 @media(max-width: 640px){
