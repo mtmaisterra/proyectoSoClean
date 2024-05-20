@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color:  #FFC0CB;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: screen;
+    align-content: center;
+}
+
+.form-contact {
+    width: 70%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    border: 6px solid #ff69b4;
+    background-color:  #FFC0CB;
+    color: black;
+}
+
+.title-contact {    
+    width: fit-content;
+    font-size: 2rem;
+    font-family: 'Roboto';
+    padding-top: 2%;
+    padding-left: 4%;
+}
+
+
+.text-input-contact {
+    width: fit-content;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    padding: 6px;
+    margin: 0.5rem;
+    margin-left: 4%;
+}
+
+.cita-contact,
+.check-contact {
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-bottom: 2%;
+    font-size: 1rem;
+    font-family: 'Roboto';
+}
+
+.info-contact {
+    margin-left: 4%;
+    margin-bottom: 1%;
+    font-size: 1rem;
+    font-family: 'Roboto';
+}
+
+.label-contact,
+.label-info,
+.label-check {
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    padding: 6px;
+    margin-top: 4%;
+}
+
+.input-check,
+.label-encuentro {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.option-check,
+.label-encuentro,
+.label-info,
+.div-info-contact {
+    padding-bottom: 1%;
+}
+
+.text-input-encuentro {
+    width: 40%;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    padding: 6px;
+    margin: 0.5rem;
+}
+
+.label-encuentro,
+.label-info-contact {
+    font-size: 1rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.label-info {
+    margin-top: 0;
+}
+
+.input-info-contact,
+.input-encuentro {
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.div-submit {
+    margin-top: 2%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.button-submit {    
+    width: fit-content;
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 20px;
+    padding: 1%;
+    background-color: #ff69b4;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+}
+
+.button-submit:hover {
+    width: fit-content;
+    background-color: white;
+    color: #ff69b4;
+    border: 8px solid #ff69b4;
+    text-transform: uppercase;
+}
