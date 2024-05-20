@@ -1,0 +1,116 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+header {
+
+   margin-bottom: 1%;
+   height:10vh;
+}
+
+.logo_sn{
+   background-color: #ffc0cb;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+
+}
+.sobre_nosotros{
+   background-color: #ffc0cb;
+   text-align: center;
+   display: grid;
+   grid-template-columns: 0.5fr 1fr;
+   grid-template-rows: 1fr;
+   grid-column-gap: 50px;
+   grid-row-gap: 0px;
+   padding: 50px;
+}
+   
+.imagen_sn{
+   grid-area: 1 / 1 / 2 / 2 ;
+}
+
+.img_sn {
+   width: 100%;
+}
+
+.texto_sn{
+   grid-area: 1 / 2 / 2 / 3;
+   font-size: 1.7em;
+}
+.tarjetas{
+   text-align: center;
+   margin-bottom: 1%;
+   margin-top: 1%;
+   
+   }
+.secciones{
+   display: flex;
+   justify-content: space-around;
+
+ 
+}
+.imagen_cliente_1,.imagen_cliente_2,.imagen_cliente_3{
+   display: flex;
+   justify-content: left;
+   
+}
+
+.cliente_1, .cliente_2, .cliente_3{
+   width: 30%;
+   background-color: #ffc0cb;
+   height: 20vh;
+   padding-top: 15px;
+   padding-left: 15px;
+   border-radius: 15px;
+
+}
+
+.secciones div img{
+   border-radius: 50%;
+}
+.secciones h3{
+   padding-top: 15px;
+   padding-left: 15px;
+}
+.texto_cliente{
+   padding: 2%;
+   text-align: left;
+}
+.empresas{
+   display: flex;
+   justify-content: center;
+   background-color: #ffc0cb;
+}
+.texto{
+   margin: 20px 0px;
+   padding: 0px 20px;
+   border-right: 2px solid rgba(0, 0, 0, 0.425);
+   display: flex;
+   align-items: center;
+   justify-content: left;
+}
+
+.imagen_empresas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   }
+footer {
+   background-color: #ffc0cb;
+   margin-top: 1%;
+   height: 10vh;
+
+}
+.logo_footer{
+   display: flex;
+   justify-content: left;
+   align-items: center;
+}
+.imagen_empresas a img{
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+
