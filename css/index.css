@@ -16,6 +16,8 @@ body{
     /* align-items: center; */
 }
 
+
+
 header{
     display: flex;
     flex-direction: row;
@@ -40,13 +42,13 @@ header .solapas a{
     text-decoration: none;
     padding: 0 20px;
     color: black;
-    /* color: #ff69b4; */
 
 }
 
 header .solapas a:hover{
     text-decoration: underline;
 }
+
 
 
 main{
@@ -176,7 +178,7 @@ main .sobre-nosotros-descripcion .sobre-nosotros-elementos .sobre-nosotros-eleme
     line-height: 175%;
 }
 
-main .sobre-nosotros-descripcion .sobre-nosotros-elementos .sobre-nosotros-elementos2 button{
+main .sobre-nosotros-descripcion .sobre-nosotros-elementos .sobre-nosotros-elementos2 a button{
     background-color: #ff69b4;
     color: white;
     padding: 10px;
@@ -187,7 +189,7 @@ main .sobre-nosotros-descripcion .sobre-nosotros-elementos .sobre-nosotros-eleme
     margin-bottom: 25px;
 }
 
-main .sobre-nosotros-descripcion .sobre-nosotros-elementos .sobre-nosotros-elementos2 button:hover{
+main .sobre-nosotros-descripcion .sobre-nosotros-elementos .sobre-nosotros-elementos2 a button:hover{
     background-color: white;
     color: #ff69b4;
     border: 1px solid #ff69b4;
@@ -307,7 +309,7 @@ main .sobre-nosotros .sobre-nosotros-textos ol li{
     margin-bottom: 10px;
 }
 
-main .sobre-nosotros .sobre-nosotros-textos button{
+main .sobre-nosotros .sobre-nosotros-textos a button{
     background-color: #ff69b4;
     color: white;
     padding: 10px;
@@ -318,7 +320,7 @@ main .sobre-nosotros .sobre-nosotros-textos button{
     box-sizing: border-box;
 }
 
-main .sobre-nosotros .sobre-nosotros-textos button:hover{
+main .sobre-nosotros .sobre-nosotros-textos a button:hover{
     background-color: white;
     color: #ff69b4;
     border: 1px solid #ff69b4;
@@ -359,12 +361,12 @@ footer .sub-footer .footer-1, footer .sub-footer .footer-2, footer .sub-footer .
     border-left: 1px solid white;
 }
 
-
-
 footer .sub-footer .footer-1 ul, footer .sub-footer .footer-2 ul, footer .sub-footer .footer-3 ul{
     width: 100%;
     padding: 0;
 }
+
+
 
 
 .titulo-lista{
